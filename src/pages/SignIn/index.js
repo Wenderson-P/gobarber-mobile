@@ -3,9 +3,6 @@ import { Image } from 'react-native';
 
 import logo from '~/assets/logo.png';
 
-import Input from '~/components/Input';
-import Button from '~/components/Button';
-
 import Background from '~/components/Background';
 
 import {
