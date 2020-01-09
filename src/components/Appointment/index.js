@@ -18,7 +18,7 @@ export default function Appointment({ data }) {
   }, [data.date]);
 
   return (
-    <Container>
+    <Container past={data.past}>
       <Left>
         <Avatar
           source={{
@@ -33,9 +33,11 @@ export default function Appointment({ data }) {
         </Info>
       </Left>
 
-      <TouchableOpacity onPress={() => { }}>
-        <Icon name="event-busy" size={20} color="#f64c75" />
-      </TouchableOpacity>
+      {data.cancelable && (
+        <TouchableOpacity onPress={() => { }}>
+          <Icon name="event-busy" size={20} color="#f64c75" />
+        </TouchableOpacity>
+      )}
     </Container>
   );
 }
