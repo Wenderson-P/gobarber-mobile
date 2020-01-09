@@ -7,12 +7,14 @@ import Routes from './routes';
 
 import { store, persistor } from './store';
 
-export default function App() {
+import App from '~/App';
+
+export default function Index() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
-        <Routes />
+        <App />
       </PersistGate>
     </Provider>
   );
