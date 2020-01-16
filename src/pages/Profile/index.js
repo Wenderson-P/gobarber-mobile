@@ -40,6 +40,12 @@ export default function Profile() {
     );
   }
 
+  useEffect(() => {
+    setOldPassword('');
+    setPassword('');
+    setConfirmPassword('');
+  }, [profile]);
+
   return (
     <Background>
       <Container>
