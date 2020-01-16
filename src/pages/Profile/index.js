@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { updateProfileRequest } from '~/store/modules/user/actions';
+import { signOut } from '~/store/modules/auth/actions';
 import Background from '~/components/Background';
 
 import {
@@ -11,6 +12,7 @@ import {
   Form,
   FormInput,
   SubmitButton,
+  LogoutButton,
 } from './styles';
 
 export default function Profile() {
@@ -38,6 +40,10 @@ export default function Profile() {
         confirmPassword,
       })
     );
+  }
+
+  function handleLogout() {
+    dispatch(signOut());
   }
 
   useEffect(() => {
@@ -102,6 +108,7 @@ export default function Profile() {
             onChangeText={setConfirmPassword}
           />
           <SubmitButton onPress={handleSubmit}>Atualizar Perfil</SubmitButton>
+          <LogoutButton onPress={handleLogout}>Sair do GoBarber</LogoutButton>
         </Form>
       </Container>
     </Background>
