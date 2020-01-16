@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
-import {useSelector,useDispatch} from 'react-redux';
+import React, { useRef, useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
+import { updateProfileRequest } from '~/store/modules/user/actions';
 import Background from '~/components/Background';
 
 import {
@@ -15,6 +15,7 @@ import {
 
 export default function Profile() {
   const profile = useSelector(state => state.user.profile);
+  const dispatch = useDispatch();
 
   const emailRef = useRef();
   const oldPasswordRef = useRef();
@@ -27,7 +28,17 @@ export default function Profile() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleSubmit() { }
+  function handleSubmit() {
+    dispatch(
+      updateProfileRequest({
+        name,
+        email,
+        oldPassword,
+        password,
+        confirmPassword,
+      })
+    );
+  }
 
   return (
     <Background>
@@ -54,7 +65,7 @@ export default function Profile() {
             value={email}
             onChangeText={setEmail}
           />
-          <Separator/>
+          <Separator />
           <FormInput
             icon="lock-outline"
             secureTextEntry
