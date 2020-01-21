@@ -18,7 +18,7 @@ class Index extends Component {
     OneSignal.addEventListener('ids', this.onIds);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     OneSignal.addEventListener('received', this.onReceived);
     OneSignal.addEventListener('opened', this.onOpened);
     OneSignal.addEventListener('ids', this.onIds);
