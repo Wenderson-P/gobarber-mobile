@@ -4,6 +4,19 @@
 </p>
 
 
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Made With](#made-with)
+  * [Demo](#demo)
+* [Getting Started](#getting-started)
+  * [Requirements](#-requirements)
+  * [Installation](#-installation)
+* [Backend](#backend)
+* [Web version](#web-version)
+
+
 ### Made with 
 
 - [React Native](http://facebook.github.io/react-native/) 
@@ -45,18 +58,34 @@
 
 </div>
 
-## Get Started
 
-After cloning the project you must run :
-</br>
-`npm install
-react-native run-android`
+## 📋 Requirements
+$ node version
+>= v0.10.24
 
-After the app is already installed you must run:
-</br>
-`react-native start`
+$ yarn --version
+1.3.21
 
+$ Npm --version
+6.9.0
+## :electric_plug: Installation
+
+1. Clone the repo
+```
+git clone https://github.com/your_username_/Project-Name.git
+```
+2. Install npm/yarn packages ( you can use both)
+```yarn install```
+
+3. Install the app
+```react native run-android```
+
+4. Run metro bundler
+```react native start```
+
+
+### Backend
+* [GoBarber](https://github.com/Wenderson-P/gobarber-backend)
 
 ### Web Version
-
 * [GoBarber Web](https://github.com/Wenderson-P/gobarber-frontend-web)
