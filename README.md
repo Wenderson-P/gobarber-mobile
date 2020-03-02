@@ -1,23 +1,28 @@
-<br />
-<p >
-  <h2 align="center">GoBarber Mobile</h2>
+<p align="center"  >
+    <a href="https://github.com/Wenderson-P/gobarber-mobile">
+        <img src="https://user-images.githubusercontent.com/52503774/75726033-5f442880-5cc0-11ea-8176-b4c9f4d3380a.png" />
+      </a>
+    <h2 align="center">GoBarber Mobile</h2>
+      <h4 align="center">Barbershop service scheduling system.</h4>
 </p>
 
-
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+## 📜 Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Made With](#made-with)
+* [About the Project](#-about-the-project)
+  * [Made With](#-made-with)
   * [Demo](#demo)
 * [Getting Started](#getting-started)
   * [Requirements](#-requirements)
   * [Installation](#-installation)
 * [Backend](#backend)
-* [Web version](#web-version)
+* [Web](#web-version)
 
+## 🔎 About the project
+See a list of barbers already registered in the [web version](https://github.com/Wenderson-P/gobarber-frontend-web), choose one, and see his free time to make a appointment. If an unforeseen event happens, you can easy cancel the appointment.
+ 
 
-### Made with 
+## 🧰 Made with
 
 - [React Native](http://facebook.github.io/react-native/) 
 - [React Navigation](https://reactnavigation.org/) 
@@ -41,17 +46,16 @@
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
   - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [EditorConfig](https://editorconfig.org/)
-- [Syuled-Components] (https://github.com/styled-components/styled-components)
+- [Styled-Components](https://github.com/styled-components/styled-components)
 - [Polished](https://github.com/styled-components/polished)
-- [Immer] (https://github.com/immerjs/immer)
+- [Immer](https://github.com/immerjs/immer)
 
 
-### DEMO
+## DEMO
 <div>
 <img  src="https://user-images.githubusercontent.com/52503774/72628965-2b8a8a80-392e-11ea-88c2-f7cdb7aba07a.png"  width="250" height="450" align="left"/>
 <img   width="250" height="450" src="https://user-images.githubusercontent.com/52503774/72629434-12360e00-392f-11ea-8cad-ff2cd2a5b081.png" align="center" />
 <img   width="250" height="450" src="https://user-images.githubusercontent.com/52503774/72628971-2d544e00-392e-11ea-831f-9b1f72277f1a.png" align="right" />
-  </br>
 <img   width="250" height="450" src="https://user-images.githubusercontent.com/52503774/72629422-09ddd300-392f-11ea-8f66-a3819239e464.png" align="left" />
 <img   width="250" height="450" src="https://user-images.githubusercontent.com/52503774/72629526-47426080-392f-11ea-8bee-94715b292046.png" align="center" />
 <img   width="250" height="450" src="https://user-images.githubusercontent.com/52503774/72629535-49a4ba80-392f-11ea-8cf4-7f0bb92a0f03.png"  align="right"  />
@@ -61,14 +65,15 @@
 
 ## 📋 Requirements
 $ node version
->= v0.10.24
+> v0.10.24
 
 $ yarn --version
 1.3.21
 
 $ Npm --version
 6.9.0
-## :electric_plug: Installation
+
+## 🔌 Installation
 
 1. Clone the repo
 ```
