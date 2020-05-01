@@ -77,7 +77,7 @@ $ Npm --version
 
 1. Clone the repo
 ```
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/Wenderson-P/gobarber-mobile.git
 ```
 2. Install npm/yarn packages ( you can use both)
 ```yarn install```
